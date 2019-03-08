@@ -27,7 +27,7 @@ var checkForMatch = function () {
 	if (cardsInPlay[0] === cardsInPlay[1]) {
 			alert("You found a match!");
 		} else {
-			altert("Sorry, try again.");
+			alert("Sorry, try again.");
 		}
 };
 
@@ -50,7 +50,7 @@ var flipCard = function () {
 
 // the function for creating the board and looping through the cards
 var createBoard = function () {
-	for (let i = 0; i < cards.length; i++) {
+	for (var i = 0; i < cards.length; i++) {
 		var cardElement = document.createElement('img');
 		cardElement.setAttribute('src', 'images/back.png');
 		cardElement.setAttribute('data-id', i);
